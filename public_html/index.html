@@ -1,0 +1,709 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <!-- META DATA -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta charset="UTF-8">
+  <title>Aptorum Group</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:url" content="http://www.aptorumgroup.com" />
+  <meta property="og:image" content="http://www.aptorumgroup/images/preview.png" />
+  <meta property="og:title" content="Aptorum Group" />
+  <meta name="author" content="Edmund Wong" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/skeleton.css" type="text/css">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/social.css" type="text/css">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+  <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+  <link rel="stylesheet" href="css/shortcodes.css" type="text/css" />
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+
+  <link id="layout_color" href="css/light.css" rel="stylesheet" type="text/css" />
+  <link id="primary_color_scheme" href="css/colors/blue.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="onepage">
+  <div id="load"></div>
+
+  <!-- START PAGE WRAP -->
+  <div class="page-wrap">
+
+    <!-- START NAVIGATION -->
+    <nav class="light sticky-nav navigation sticky">
+      <!--<nav class="transparent navigation"> -->
+      <!-- START CONTAINER -->
+      <div class="container clearfix">
+        <div class="four columns">
+          <!-- START LOGO -->
+          <div class="logo large">
+            <a href="#home">
+              <img src="images/logo.png" title="logo" alt="Logo" />
+            </a>
+          </div>
+          <!-- END LOGO -->
+        </div>
+        <!-- END FOUR COLUMNS -->
+        <div class="twelve columns">
+          <!-- START NAVIGATION MENU ITEMS -->
+          <ul class="main-menu large nav" id="nav">
+            <script id="nav_temp" type="text/template7">
+              {{#each menu}}
+              <li>
+                <a href="{{href}}">{{name}}</a>
+              </li>
+              {{/each}}
+            </script>
+          </ul>
+          <!-- END NAVIGATION MENU ITEMS -->
+        </div>
+        <!-- END TWELVE COLUMNS -->
+      </div>
+      <!-- END CONTAINER -->
+    </nav>
+    <!-- END NAVIGATION -->
+
+    <div id="page_content">
+      <script id="content_temp" type="text/template7">
+        <!-- START HOME SECTION -->
+        <div id="home" class="home-parallax">
+          <div class="home-text-wrapper">
+            <div id="home-slider" class="flexslider" style="/* height: 110% */">
+              <ul class="slides styled-list" style="height: 100%">
+                {{#each home.banners}}
+                <li class="home-slide" style="height: 100%">
+                  <div class="home-slide-bg" style="background-image: url({{path}});">
+                    <div class="home-logo-text">
+                      <a>{{../home.text}}</a>
+                    </div>
+                    <p class="home-slide-content" style="color: {{color}}">{{text}}</p>
+                  </div>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="view-more">
+              <a href="#about" class="button scroll-to">{{translation.view_more}}</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- END HOME SECTION -->
+
+        <!-- START ABOUT US SECTION -->
+        <div id="about" class="page">
+
+          <div class="container">
+            <div class="row">
+              <div class="sixteen columns">
+                <!-- START TITLE -->
+                <div class="title">
+                  <h1>{{aboutus.title}}</h1>
+                  <div class="section-content">
+                    <p>{{aboutus.text}}</p>
+                  </div>
+                  <!-- END SUBTITLE -->
+                </div>
+                <!-- END TITLE -->
+              </div>
+              <!-- END SIXTEEN COLUMNS -->
+            </div>
+            <!-- END ROW -->
+          </div>
+          <!-- END CONTAINER -->
+
+          <div class="fullwidth grey">
+            <div class="container">
+              <div class="fancy-header2">
+
+                <h2 class="highlight">{{aboutus.organization.title}}</h2>
+                <p>{{aboutus.organization.text}}</p>
+              </div>
+
+              <div class="row">
+                {{#each aboutus.organization.services}}
+                <div class="one-second column">
+                  <div class="service-features">
+                    <div class="img-container">
+                      <img src="{{icons}}" alt="Service Features">
+                    </div>
+                    <h3>{{name}}</h3>
+                    <p>{{text}}</p>
+                  </div>
+                </div>
+                {{/each}}
+                <!-- END ONE THIRD COLUMN -->
+              </div>
+              <!-- END ROW -->
+            </div>
+            <!-- END CONTAINER -->
+          </div>
+
+        </div>
+        <!-- End ABOUT US SECTION -->
+
+
+        <!-- START BUSINESS SECTION -->
+        <div id="business" class="business-parallax">
+          <div id="business-slider" class="flexslider" style="/* height: 100% */">
+            <ul class="slides styled-list" style="height: 100%">
+              {{#each business.banners}}
+              <li class="business-slide" style="height: 100%">
+                <div class="business-slide-bg" style="background-image: url({{path}});">
+                  <p class="business-slide-content" style="color: {{color}}">{{text}}</p>
+                </div>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="view-more">
+            <a data-toggle="modal" href="#modal_business" class="button scroll-to open-modal">{{translation.view_more}}</a>
+          </div>
+        </div>
+
+
+
+        <!-- END BUSINESS SECTION -->
+
+
+        <!-- START TEAM SECTION -->
+        <div id="team" class="fullwidth grey">
+
+          <div class="container">
+            <div class="row">
+              {{#each team.teams}}
+              <div class="one-third column">
+                <div class="team-features">
+                  <div id="team-image{{@index}}" class="team-image">
+                    <div class="img-container team-img-org">
+                      <a data-toggle="modal" href="#{{id}}" class="modal-popup-link open-modal">
+                        <img src="{{icons}}" alt="Our Teams">
+                      </a>
+                    </div>
+                    <div class="team-img-overlay">
+                      <a data-toggle="modal" href="#{{id}}" class="modal-popup-link open-modal">
+                        <img src="{{icons_overlay}}" alt="Our Teams">
+                      </a>
+                    </div>
+                  </div>
+                  <h3>{{name}}</h3>
+                  <p>{{text}}</p>
+                </div>
+              </div>
+              {{/each}}
+              <!-- END ONE THIRD COLUMN -->
+            </div>
+            <!-- END ROW -->
+          </div>
+          <!-- END CONTAINER -->
+        </div>
+        <!-- END TEAM SECTION -->
+
+        <!-- START NEWS US SECTION -->
+        <div id="news" class="page">
+          <!-- START AJAX SECTION -->
+          <div id="ajax-section">
+            <div class="container clearfix">
+
+              <!-- START PROJECT CLOSE BUTTON -->
+              <div id="closeProject">
+                <a href="#loader">
+                  <i class="icon-remove"></i>
+                </a>
+              </div>
+              <!-- START PROJECT CLOSE BUTTON -->
+
+              <!-- START PROJECT LOADER SECTION -->
+              <div id="loader"></div>
+              <!-- END PROJECT CLOSE BUTTON -->
+
+              <!-- START AJAX CONTENT -->
+              <div id="ajax-content-outer">
+                <!-- START PROJECT NAVIGATION -->
+                <div id="project-navigation">
+                  <ul>
+                    <li id="nextProject">
+                      <a href="#"></a>
+                    </li>
+                    <li id="prevProject">
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- END PROJECT NAVIGATION -->
+                <div id="ajax-content-inner"></div>
+              </div>
+              <!-- END AJAX CONTENT -->
+              <div class="container">
+                <div class="row">
+                  <div class="fancy-header2">
+                    <h2 class="highlight">{{news.title}}</h2>
+                  </div>
+                  <!-- START OF ACCORDION -->
+                  <div class="accordion" rel="1">
+                    <div class="accordion-title active">
+                      <h3>
+                        <span></span>
+                        <a href="#">{{translation.pressrelease}}</a>
+                      </h3>
+                    </div>
+
+                    <div class="accordion-inner">
+                      <table id="news_table" class="display" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th>{{../../translation.datatable.headers.date}}</th>
+                            <th>{{../../translation.datatable.headers.title}}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                          {{#each news.press}}
+                          <tr>
+                            <td>
+                              <a href="#!press.html?name={{name}}">{{date}}</a>
+                            </td>
+                            <td>
+                              <a href="#!press.html?name={{name}}">{{title}}</a>
+                            </td>
+                          </tr>
+                          </a>
+                          {{/each}}
+
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                  <!-- END OF ACCORDION -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END NEWS US SECTION -->
+
+        <!-- START INVESTION RELATION SECTION -->
+        <div id="investor" class="color-block">
+          <div class="investor-bg parallax-bg"></div>
+          <!-- END PARALLAX BACKGROUND -->
+          <div class="container clearfix">
+            <div class="home-logo-text">
+              <a>{{investor.title}}</a>
+            </div>
+            <div class="investor-content">
+              <p>
+                <!-- {{investor.text}} -->
+              </p>
+            </div>
+            <div class="view-more">
+              <!-- <a href="{{investor.dataroomurl}}" class="button scroll-to">{{translation.view_more}}</a> -->
+            </div>
+          </div>
+          <!-- END CONTAINER -->
+        </div>
+        <!-- END INVESTION RELATION SECTION -->
+
+        <!-- START CONTACT SECTION -->
+        <div id="contact" class="fullwidth">
+
+          <div class="container">
+            <div class="row">
+              <div class="sixteen columns">
+                <!-- START TITLE -->
+                <div class="title">
+                  <h1>{{contact.title}}</h1>
+                  <div class="contact-details">
+                    <p>{{contact.text}}</p>
+                  </div>
+                </div>
+                <div class="subtitle">
+                  <p>{{contact.callus}}</p>
+                </div>
+                <!-- END TITLE -->
+              </div>
+            </div>
+            <!-- END ROW -->
+          </div>
+          <!-- END CONTAINER -->
+          <div class="container clearfix">
+            <div class="sixteen columns">
+
+              <!-- START CONTACT BOX -->
+              <div class="contact-box">
+                <!-- START CONTACT FORM -->
+                <div id="contact-form">
+                  <form action="#" method="post">
+
+                    <div id="contact-input">
+                      <!--[if IE]>
+                    <label for="name">Name</label>
+                <![endif]-->
+                      <input type="text" name="contact[name]" id="name" placeholder="{{contact.placeholders.name}}">
+                      <!--[if IE]>
+                   		<label for="email">Email</label>
+                    <![endif]-->
+                      <input type="text" name="contact[email]" id="email" placeholder="{{contact.placeholders.email}}">
+                      <!--[if IE]>
+                   		<label for="subject">Subject</label>
+                    <![endif]-->
+                      <input type="text" name="contact[subject]" id="subject" placeholder="{{contact.placeholders.subject}}">
+                      <div>
+                        <div id="captcha"></div>
+                      </div>
+                    </div>
+                    <div id="contact-textarea">
+                      <!--[if IE]>
+                   		<label for="message">Your Message Here</label>
+                    <![endif]-->
+                      <textarea name="contact[message]" id="message" cols="39" rows="4" placeholder="{{contact.placeholders.message}}"></textarea>
+                    </div>
+                    <div id="contact-submit">
+                      <div>
+                        <input name="submit" type="submit" id="submit" tabindex="5" value="Post Comment" class="comment-submit small button">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="clear"></div>
+                </div>
+                <div class="result"></div>
+                <!-- END CONTACT FORM -->
+              </div>
+              <!-- END CONTACT BOX -->
+            </div>
+          </div>
+          <!-- END CONTAINER -->
+          <div class="container">
+            <div class="row address">
+              <div class="sixteen columns">
+                {{translation.address}}: {{contact.address}}
+              </div>
+              <div class="sixteen columns">
+                {{translation.tel}}: {{contact.tel}}&nbsp&nbsp&nbsp {{translation.fax}}: {{contact.fax}}
+              </div>
+            </div>
+          </div>
+          <!-- START COPYRIGHT SECTION -->
+          <div class="copyright">
+            <div class="container clearfix">
+              <div class="sixteen columns">
+                <p>&copy; 2017 Aptorum Group Limited All Rights Reserved. |
+                  <a data-toggle="modal" href="#modal_terms" class="modal-popup-link open-modal">
+                  Terms of Use</a> |
+                  <a href="#">Private Policy</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END COPYRIGHT SECTION -->
+
+        </div>
+        <!-- END CONTACT SECTION -->
+
+    </div>
+
+    </script>
+  </div>
+  <!-- END PAGE WRAP -->
+
+  <div id="modal_content">
+    <script id="modal_temp" type="text/template7">
+      <!-- START TEAM MEMBER MODAL POPUP  -->
+      {{#each team.teams}}
+      <div id="{{id}}" class="modal hide fade.in animated fadeIn">
+
+        <!-- START TEAM MEMBER -->
+        <div class="member-bio">
+          <div class="container">
+
+            <!-- START MODAL POPUP CLOSE BUTTON -->
+            <a href="#" class="close" data-dismiss="modal">×</a>
+            <!-- END MODAL POPUP CLOSE BUTTON -->
+
+            <!-- START MEMBER NAME AND ROLE -->
+            <div class="member-role">
+              <h1>{{name}}</h1>
+            </div>
+            <!-- END MEMBER NAME AND ROLE -->
+            <div class="members">
+              {{#each members}}
+              <div class="row member">
+                <div class="six columns">
+                  <!-- START MEMBER IMAGE -->
+                  <img class="member-image" src="{{img}}" alt="team">
+                  <!-- END MEMBER IMAGE -->
+                </div>
+
+                <div class="ten columns member-description">
+                  <h3>{{name}}</h3>
+                  <h5>{{title}}</h5>
+                  {{text}} {{#if remark}}
+                  <p>*{{remark}}</p>
+                  {{/if}}
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+          <!-- END CONTAINER -->
+        </div>
+        <!-- END TEAM MEMBER -->
+      </div>
+      {{/each}}
+      <!-- END TEAM MEMBER MODAL POPUP -->
+
+      <!-- modal_business -->
+      <!-- START TEAM MEMBER MODAL POPUP  -->
+      <div id="modal_business" class="modal hide fade.in animated fadeIn modal-popup-link">
+
+          <!-- START TEAM MEMBER -->
+          <div class="business_modal ">
+            <div class="container ">
+
+              <!-- START MODAL POPUP CLOSE BUTTON -->
+              <a href="#" class="close" data-dismiss="modal">×</a>
+              <!-- END MODAL POPUP CLOSE BUTTON -->
+
+              <!-- START MEMBER NAME AND ROLE -->
+              <div class="member-role">
+                <h1>{{business.modal.title}}</h1>
+              </div>
+              <!-- END MEMBER NAME AND ROLE -->
+              <div class="businesses_desc">
+                {{#each business.modal.businesses}}
+                <div class="row ">
+                  <div class="sixteen columns">
+                    <h2>{{title}}</h2>
+                    <div>{{text}}</div>
+                  </div>
+                </div>
+                {{/each}}
+              </div>
+            </div>
+            <!-- END CONTAINER -->
+          </div>
+          <!-- END TEAM MEMBER -->
+        </div>
+        <!-- END TEAM MEMBER MODAL POPUP -->
+
+      <div id="modal_terms" class="modal hide fade.in animated fadeIn modal-popup-link">
+
+        <div class="container">
+          <!-- START MODAL POPUP CLOSE BUTTON -->
+          <a href="#" class="close" data-dismiss="modal">×</a>
+          <!-- END MODAL POPUP CLOSE BUTTON -->
+
+          <!-- START MEMBER NAME AND ROLE -->
+          <div class="member-role">
+            <h1>{{translation.termofuse}}</h1>
+          </div>
+          <div class="termofuse_content">
+            <p>This Website contains information concerning Aptorum Group Limited (&ldquo;Aptorum Group&rdquo;) and its affiliates
+              that may be useful to Aptorum Group&rsquo;s customers, suppliers, employees, directors and shareholders, as
+              well as members of the general public. However, by using this Website you are accepting all of the terms of
+              this disclaimer notice, including exclusions and limitations of liability. If you do not agree with anything
+              in this notice, you should not use this Website.</p>
+            <p>&nbsp;</p>
+            <p>Aptorum Group does not claim ownership of the materials and product images on the Website that are provided to
+              us by our third party suppliers.</p>
+            <p>&nbsp;&nbsp;</p>
+            <p>Where our Website contains links to other sites and resources provided by third parties, these links are provided
+              for your information only. We have no control over the contents of those sites or resources, and accept no
+              responsibility for them or for any loss or damage that may arise from your use of them. These links are provided
+              solely as a convenience to you and not as an endorsement by us of the contents on such third party websites.</p>
+            <p>&nbsp;</p>
+            <p>While reasonable efforts are made to ensure that the contents of this Website are accurate, this Website and
+              its contents are provided on an &ldquo;as is,&rdquo; &ldquo;as available&rdquo; basis, without warranties of
+              any kind, including any warranty that the Website will be kept up to date, be true and not misleading, or that
+              the Website will always (or ever) be available for use. [Company] and its affiliates disclaim all warranties,
+              express or implied, with respect to the Website and its contents, including, without limitation, any warranties
+              of accuracy, completeness, timeliness, non-infringement, title, merchantability, or fitness for a particular
+              purpose. Because some jurisdictions do not permit the exclusion of certain warranties, these exclusions may
+              not apply to you.</p>
+            <p>&nbsp;</p>
+            <p>In no event will Aptorum Group or its affiliates be liable for any incidental, indirect, consequential, or special
+              damages of any kind, or any damages whatsoever, including, without limitation, those resulting from loss of
+              profits, contracts, goodwill, data, information, income, anticipated savings, or business relationships, whether
+              or not [Company] or its affiliates have been advised of the possibility of such damage, arising out of or in
+              connection with the use of this Website or its contents or any other sites linked to this Website.</p>
+            <p>&nbsp;</p>
+            <p>If you have any concerns about material which appears on our Website, please contact us. We have the right and
+              the ability to remove immediately from our Website any material that is infringing, defamatory, offensive,
+              abusive, harming, deceptive, threatening or otherwise illegal.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </script>
+  </div>
+
+  <div id="back-to-top">
+    <a href="#">Back to Top</a>
+  </div>
+
+  <!-- JARVIS THEME SCRIPTS -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="js/jquery.tweet.js"></script>-->
+  <script type="text/javascript" src="js/jquery.form.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.queryloader2.js"></script> -->
+  <!-- <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="js/jquery.appear.js"></script>
+  <script type="text/javascript" src="js/jquery.slabtext.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fittext.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> -->
+  <script type="text/javascript" src="js/jquery.sticky.js"></script>
+  <script type="text/javascript" src="js/selectnav.min.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="js/isotope.js"></script>
+  <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+  <script type="text/javascript" src="js/shortcodes.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+  <script type="text/javascript" src="js/template7.js"></script>
+  <script type="text/javascript" src="js/configs.js"></script>
+  <script type="text/javascript" src="js/configs.ts.js"></script>
+  <script type="text/javascript" src="js/configs.tc.js"></script>
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+  <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      lang = $.cookie("lang");
+      if (lang == 'tc') {
+        configs = configs_tc;
+      } else if (lang == 'ts') {
+        configs = configs_ts;
+      }
+      if (typeof (lang) == 'undefined') $.cookie("lang", "en");
+      // console.log($.cookie("lang"));
+      compile_template7('nav_temp', 'nav', configs);
+      compile_template7('content_temp', 'page_content', configs);
+      compile_template7('modal_temp', 'modal_content', configs);
+
+      // menu_scrolling();
+      loader = $('div#loader'),
+        projectContainer = $('div#ajax-content-inner'),
+        portfolioGrid = $('news_table'),
+        projectNav = $('#project-navigation ul'),
+        exitProject = $('div#closeProject a'),
+        easing = 'easeOutExpo';
+      var news_table = $('#news_table').DataTable({
+        "scrollY": "20vh",
+        // "scrollCollapse": true,
+        "paging": false,
+        "order": [
+          [0, 'desc']
+        ],
+        "info": false,
+        "language": configs.translation.datatable.language,
+        "columnDefs": [{
+            "type": "date",
+            "targets": 0
+          },
+          {
+            "orderable": false,
+            "targets": 1
+          }
+        ]
+      });
+
+      init_home_slider();
+      init_contact_form();
+      init_captcha();
+      rnr_shortcodes();
+      initializePortfolio();
+      $('.flex-control-paging').find('a').each(function () {
+        if ($(this).html() == 2) {
+          $(this).trigger('click');
+        }
+      });
+      var curr_y;
+      $('.open-modal').each(function (index) {
+        $(this).on('click', function (e) {
+          e.preventDefault();
+          $('body').attr('scroll', 'no');
+          curr_y = $(window).scrollTop();
+          $('#page_content').hide();
+        });
+      });
+      // $('.team-img-overlay').each(function (index) {
+      //   $(this).on('click', function (e) {
+      //     e.preventDefault();
+      //     $('body').attr('scroll', 'no');
+      //     curr_y = $(window).scrollTop();
+      //     $('#page_content').hide();
+      //   });
+      // });
+      // $('.team-img-org').each(function (index) {
+      //   $(this).on('click', function (e) {
+      //     e.preventDefault();
+      //     $('body').attr('scroll', 'no');
+      //     curr_y = $(window).scrollTop();
+      //     $('#page_content').hide();
+      //   });
+      // });
+      // $('.modal-popup-link').each(function (index) {
+      //   $(this).on('click', function (e) {
+      //     e.preventDefault();
+      //     $('body').attr('scroll', 'no');
+      //     curr_y = $(window).scrollTop();
+      //     $('#page_content').hide();
+      //   });
+      // });
+      $('.close').each(function (index) {
+        $(this).on('click', function (e) {
+          e.preventDefault();
+          $('body').attr('scroll', 'yes');
+          $('#page_content').show();
+          resize_home_parallax();
+          resize_business_parallax();
+          $(window).scrollTop(curr_y);
+        });
+      });
+
+    });
+
+    $(window).on("load", function () {
+      menu_scrolling();
+      fix_section_height();
+      $('#home-slider.flexslider').flexslider(0);
+      $('#business-slider.flexslider').flexslider(0);
+      $('#home-slider.flexslider').flexslider('play');
+      $('#business-slider.flexslider').flexslider('play');
+      setTimeout(
+        function () {
+          $('#load')
+            .fadeOut().remove();
+        }, 500);
+      testMobile = isMobile.any();
+      $(window).trigger('hashchange');
+    });
+  </script>
+
+</body>
+
+</html>

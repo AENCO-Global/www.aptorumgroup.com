@@ -1,0 +1,34 @@
+<div id="ajaxpage">
+    <div id="press_temp" type="text/template7">
+        <div class="ten columns">
+            <div class="project-media">
+                {{#if ishtml}}
+                <div>
+                    <a href="{{href}}" target="_blank">
+                        <img src="press/{{name}}.png">
+                    </a>
+                </div>
+                {{else}}
+                <video poster="press/{{name}}_poster.png" preload="none" controls="controls">
+                    <source src="press/{{name}}.mp4" type="video/mp4">
+                </video>
+                {{/if}}
+
+            </div>
+        </div>
+
+        <div class="eight columns">
+            <div class="project-info">
+                <div class="project-description">
+                    <h3>{{title}}</h3>
+                    <p>{{caption}}</p>
+                </div>
+
+                <div class="project-details">
+                    <p>
+                        <span>{{date}}</span>@ {{place}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

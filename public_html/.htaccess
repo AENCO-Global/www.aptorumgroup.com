@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/address/*$
+RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} !^([^@]*)@@https?://\1/.*
+RewriteCond %{QUERY_STRING} !(?:^|&)download=1 [NC]
+RewriteRule . - [R=404,L]
