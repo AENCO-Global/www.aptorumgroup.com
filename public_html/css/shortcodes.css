@@ -260,6 +260,9 @@ alert-message.info a {
 .fullwidth.grey {
 	background-color: #f5f5f5;
 }
+.fullwidth.blue {
+	background-color: #0099FF;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	MILESTONE COUNT

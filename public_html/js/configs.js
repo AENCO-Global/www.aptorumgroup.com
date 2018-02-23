@@ -24,11 +24,11 @@ var configs = {
             "href": "#contact"
         },
         {
-            "name": "繁",
+            "name": "ç¹",
             "href": "#lang#tc"
         },
         {
-            "name": "簡",
+            "name": "ç°¡",
             "href": "#lang#ts"
         },
     ],
@@ -53,13 +53,20 @@ var configs = {
     },
     "aboutus": {
         "title": "About Aptorum",
-        "text": "Aptorum Group Limited (“Aptorum Group” or “The Company”) is a Hong Kong-based life science and biopharmaceutical company dedicated to acquiring, developing and commercializing novel biopharmaceutical products and innovations around the world.<br>By collaborating with universities and scientific institutions, Aptorum Group actively seeks product candidates which address significant unmet medical needs. Aptorum’s platform facilitates the incubation of portfolio companies committed to creating innovative solutions for healthcare advancement.<br>Aptorum Group leverages its academic relationships, business network, life science development capabilities and provides administrative and management services to help its units achieve their objectives and goals.",
+        "text": "Aptorum Group Limited (“Aptorum Group” or “The Company”) is a Hong Kong-based life science and biopharmaceutical company dedicated to acquiring, developing and commercializing novel biopharmaceutical products and innovations around the world. </br>  By collaborating with the world’s leading universities and scientific institutions, we actively seek product candidates which tackle key global health challenges and address unmet medical needs. Also, by leveraging on our business network and efficient management, Aptorum facilitates our portfolio companies to unleash their life science development capabilities that propel innovative solutions for healthcare advancement. </br> As of December 2017, Aptorum Group has obtained 11 exclusive licenses covering neurology, infectious diseases, gastroenterology, oncology, surgical robotics and natural health, etc. </br> Additionally, we are dedicating resources to develop a worldwide medical clinics network (commencing in Hong Kong initially), which assembled with talented clinicians and surgical experts, to address the demand for high quality healthcare services in the region.",
+        "vision":{
+            "title":"Our Vision",
+            "bullets":  [{"text": "Facilitating life science technologies from bench to beside"},
+                         {"text": "To tackle key global health challenges and unmet needs"},
+                         {"text": "To propel innovations in healthcare and life science"},
+                        ]
+        },
         "organization": {
             "title": "Our Organization",
-            "text": "<p>Our business consists of a “therapeutics” business segment and a “non therapeutic” business segment</p>",
+            "text": "<p>Our business consists of a â€œtherapeuticsâ€ business segment and a â€œnon therapeuticâ€ business segment</p>",
             "services": [{
                     "name": "Therapeutics",
-                    "text": "Therapeutics segment is dedicated to clinical development of its biopharmaceutical drugs, food supplements, and diagnostic drugs and devices, whose business includes the licensing, strategic acquisition, development and protection of intellectual property (“IP”), as well as seeking regulatory and marketing approval of IP and technologies with the intent to develop such innovations towards commercialization in key global markets.",
+                    "text": "Therapeutics segment is dedicated to clinical development of its biopharmaceutical drugs, food supplements, and diagnostic drugs and devices, whose business includes the licensing, strategic acquisition, development and protection of intellectual property (â€œIPâ€), as well as seeking regulatory and marketing approval of IP and technologies with the intent to develop such innovations towards commercialization in key global markets.",
                     "icons": "images/icons/Button1.png"
                 },
                 {
@@ -67,40 +74,51 @@ var configs = {
                     "text": "Non-therapeutics segment encompasses non-drug development or non-therapeutic related businesses, (e.g. robotic surgery and medical devices) and is planning to develop and making strategic acquisitions of clinics and hospitals, with the aim of creating advanced medical innovation centers and clusters worldwide.",
                     "icons": "images/icons/Button2.png"
                 },
-                // {
-                //     "name": "APTUS Financial",
-                //     "text": "a financing arm (in Europe) dedicated towards capital raising and financing in the healthcare sector both for Aptorum’ and external projects.",
-                //     "icons": "images/icons/Button3.png"
-                // }
             ]
+        },
+        "story":{
+            "title":"Our Story",
+            "paragraphs":  [{"text": "In November 2002, an outbreak of Severe Acute Respiratory Syndrome (SARS) began in Guangdong Province of the PRC, which has then bordered on Hong Kong in March 2003."},
+                            {"text": "Our Chairman – Mr. Ian Huen, his father was unfortunately confirmed as one of the sufferers from SARS in Hong Kong, and for this reason, his whole family was forced to be quarantined. At that juncture, Mr. Ian Huen was so dedicated that a curative solution for SARS can be found by the research team which led by Professor Kwok-Yung Yuen of The University of Hong Kong. Finally, the World Health Organization (\“WHO\”) declared that SARS was contained in July 2003 and Mr. Ian Huen’s father has recovered from the disease."},
+                            {"text": "This incident has provoked the passion of Mr. Ian Huen to invest in life science and biopharmaceutical projects, and highlighted that Hong Kong as the world city of Asia, has many talented medical specialists with outstanding international academic reputation, knowledge and track record."},
+                        ]
         },
         "partnership": {
             "title": "Our Partnership",
-            "text": "APTORUM recognizes the ultimate aim of improving patient health and the benefits from collaboration between academia and industry partners. Partnering represents an important component of our strategy to share development risk in large clinical trials, facilitate translational research funding and technology commercialization.",
+            "text":"Aptorum is actively seeking partners in the development of novel biopharmaceutical products and innovations, and has entered into multiple collaborations with leading academic and clinical research groups, to extend the reach of innovative therapies to more patients and the greater healthcare community.",
             "partners": {
                 "university": {
                     "title": "University",
                     "col1": [{
-                            "path": "images/partner/harvard.png"
+                            "path": "images/partner/harvard.png",
+                            "text": "Harvard University"
                         },
                         {
                             "path": "images/partner/hkbu.png"
                         },
                         {
-                            "path": "images/partner/hkcu.png"
+                            "path": "images/partner/hkcu.png",
+                            "text": "The Chinese University of Hong Kong (CUHK)"
                         },
                         {
-                            "path": "images/partner/hku.png"
+                            "path": "images/partner/hku.png",
+                            "text": "The University of Hong Kong (HKU)"
                         },
                     ],
                     "col2": [{
-                            "path": "images/partner/manu.png"
+                            "path": "images/partner/manu.png",
+                            "text": "The University of Manchester"
                         },
                         {
                             "path": "images/partner/ucl.png"
                         },
                         {
-                            "path": "images/partner/oxford.png"
+                            "path": "images/partner/oxford.png",
+                            "text": "University of OXFORD"
+                        },
+                        {
+                            "path": "images/partner/polyu.png",
+                            "text": "The Hong Kong Polytechnic University"
                         },
                     ]
                 },
@@ -110,30 +128,32 @@ var configs = {
                             "path": "images/partner/icr.png"
                         },
                         {
-                            "path": "images/partner/icr.png"
-                        },
-                        {
-                            "path": "images/partner/mpi.png"
+                            "path": "images/partner/mpi.png",
+                            "text": "MPI Research"
                         },
                     ],
                     "col2": [{
                             "path": "images/partner/oxstem.png"
                         },
                         {
-                            "path": "images/partner/sttarr.png"
+                            "path": "images/partner/sttarr.png",
+                            "text": "The STTARR (Spatio-temporal Targeting and Amplification of Radiation Response)"
                         },
                         {
-                            "path": "images/partner/uhn.png"
+                            "path": "images/partner/uhn.png",
+                            "text": "University Health Network"
                         },
                     ]
                 },
                 "association": {
                     "title": "Association",
                     "col1": [{
-                            "path": "images/partner/mada.png"
+                            "path": "images/partner/mada.png",
+                            "text": "Macau Alzheimer’s Disease Association"
                         },
                         {
-                            "path": "images/partner/cdra.png"
+                            "path": "images/partner/cdra.png",
+                            "text": "The Chinese Dementia Research Association Ltd"
                         },
                     ],
                 },
@@ -162,19 +182,53 @@ var configs = {
         ],
         "modal":{
             "title":"Our Business",
+            "text1": "Our primary objective is to propel innovations in healthcare and life science that tackle key global health challenges and unmet medical needs, and to maximize the global commercial value of our product candidates. Aptorum Group owns/operates the project companies which license IP patents and are dedicated to clinical development of our product candidates, as well as development of a worldwide medical clinic network to address the demand for high quality healthcare services.",
+            "text2": "We have adopted three core strategies to empower our business development and maximize values.",
+            "bullets":  [{"text": "Leverage on our academic relationships, business network and life science development capabilities to facilitate product development"},
+                         {"text": "Being selective on potential therapeutic innovations with scientific quality and promising market demand prospects"},
+                         {"text": "Build up a portfolio of commercialized products and products in development to diversify the risks typically associated with biopharmaceutical development and make numerous income streams and create values for shareholders"},
+                        ],
+            "text3": "Our business consists of a `therapeutics` business segment and a `non therapeutic` business segment ",
+            "image": "images/orgchart.png",
+
+
             "businesses":[
                 {
                     "title":"Therapeutics",
-                    "text":"<p>The business strategy of our Therapeutics entity is to create a portfolio of commercialized products and products in development through its subsidiaries to help diversify the risks typically associated with biopharmaceutical development and to diversify income stream for our stakeholders. </p><p>Aptorum Therapeutics may seek in-licensing, strategic acquisitions, partnerships, joint ventures and/or public and private financings to accelerate and provide additional funding to support their clinical development programs.</p><ul><li>Scipio (Oncology)</li><li>Signate (Robotic Surgical)</li><li>Acticule (Infectious Disease)</li><li>Nativus (Natural Health)</li><li>Videns (Neurology)</li><li>Claves (Obesity)</li><li>Triune (Neurology)</li><li>Pharmaceutical Development (Formulation)</li></ul>"
+                    "text1": "Therapeutics segment is dedicated to clinical development of its biopharmaceutical drugs, food supplements, and diagnostic drugs and devices, whose business includes the licensing, strategic acquisition, development and protection of intellectual property (\“IP\”), as well as seeking regulatory and marketing approval of IP and technologies with the intent to develop such innovations towards commercialization in key global markets.",
+                    "text2": "We own/control and operate the project companies which license IP patents and are dedicated to clinical development of our product candidates. We also intend to generate income through, for example, royalty rights or sub-licensing arrangements to ensure consistent development quality, commercial objectives and management across the Aptorum Group companies.",
+                    "bullets":  [{  "title": "Videns (Neurology)",
+                                    "text":"Focused on the large-scale strategic clinical development in neurodegenerative disease and imaging diagnosis innovation. Videns will be able to deliver a strong and diversified portfolio of medical imaging and drug treatment products in the field of neurodegenerative diseases and reshape such global landscape."
+                                 },
+                                 {  "title": "Acticule (Infectious Disease)",
+                                    "text": "Acticule is a Spin-off Company of The University of Hong Kong, focusing on novel drug discovery and clinical therapeutic development in infectious disease related medical indications. Major product categories focus on antiviral and bacteria anti-virulence candidates and potential oral and injectable drugs."
+                                 },
+                                 {  "title": "Claves (Gastroenterology)",
+                                    "text": "Claves focuses on the clinical development of therapeutic candidates related to the field of gastroenterology. The potential candidates under review and potentially developed focus on the removal of gut microbiota derived metabolites, with the purpose to prevent dysbiosis. Claves is also considering the possibilities of establishing a gut microbiota regulation platform with the objective to create a sustainable pipeline for therapeutic candidates to sequestrate metabolites with high affinity and specificity."
+                                 },
+                                 {  "title": "Scipio (Oncology)",
+                                    "text": "Scipio focuses on the development of drugs and diagnostic methods in the field of oncology. Scipio’s current key project involves novel anti-cancer agents in the form of novel quinoline derivatives as new anti-cancer drugs and the molecular oncology of esophageal carcinoma."
+                                 },
+                                 {  "title": "Nativus (Natural Health)",
+                                    "text": "Nativus focuses on Natural Health or the development of therapeutic drugs and food supplements based on extracts from natural ingredients, such as garlic and Chinese yam. Applications primarily focus on the women’s health sector and vision care. Nativus’ current lead candidate focuses on the treatment of endometriosis and the alleviation of pain symptoms due to dysmenorrhea commonly affecting women."
+                                 },
+                                 {  "title": "Aptorum Pharmaceutical Development (Formulation, CMC, Toxicology)",
+                                    "text": "Aptorum Pharmaceutical Development (“APD”) operates an in-house pharmaceutical development center. The primary mission of the center is (i) to engage in GMP grade preclinical development of Aptorum Groups product candidates and assets with the ultimate objective of enabling them to enter first-in-human clinical trials; and (ii) to provide consultation and contract research work for clients."
+                                 }
+                                ]
+
                 },
                 {
-                    "title":"Medical",
-                    "text":"<p>Aptorum Medical develops and makes strategic acquisition of clinics and hospitals worldwide<p><ul><li>Hospitals</li><li>Clinics</li></ul>"
+                    "title":"Non-Therapeutics",
+                    "text1": "Non-therapeutics segment encompasses non-drug development or non-therapeutic related businesses, (e.g. robotic surgery and medical devices) and is planning to develop and making strategic acquisitions of clinics and hospitals, with the aim of creating advanced medical innovation centers and clusters worldwide.  Our business objective is to capitalize strategically and facilitate the development of a large range of innovations with clinical and commercial potential made by our subsidiaries – Signate Life Sciences Limited and Aptorum Medical Limited. We believe the two companies will have significant synergies in the future, whereby, for example, Aptorum Medical Limited can act as the commercialization doorway toward our robotic surgical devices and A.I. driven innovations. ",
+                    "text2": "",
+                    "bullets":  [{  "title": "Signate (Robotic surgery)",
+                                    "text":"Dedicating resources toward the prospective development of robotic driven surgical devices, as well as medical analytics technology based on artificial intelligence (“A.I.”).  We believe there is a significant market opportunity in merging robotic surgical devices and A.I. driven medical analytics to enhance surgical processes; this combined application has great potential for future development. "
+                                 },
+                                 {  "title": "Aptorum Medical Limited (medical clinic)",
+                                    "text": "As a prospective business, we will also be dedicating resources toward the set up and operation of medical clinics (commencing in Hong Kong initially) over the next 3 years to attract medical and surgical talent to our group and to address the shortage of good quality healthcare and medical clinics in the region. "
+                                 }]
                 },
-                // {
-                //     "title":"Financial Group",
-                //     "text":"<p>Aptorum is setting up a financing arm dedicated towards capital raising and financing in the healthcare sector collectively known as Aptorum Financial Group</p>"
-                // },
             ],
         }
     },
@@ -183,7 +237,7 @@ var configs = {
             {
                 "id":"bods",
                 "name": "Board of Directors",
-                "text": "The Board of Directors governs Aptorum Group in accordance with its vision, mission and values. Aptorum’s directors have extensive medical, governance and financial experience and relationships throughout the healthcare industry. The role of the Board of Directors is to ensure that the company is well managed by having its units fulfilling their roles and responsibilities.",
+                "text": "The Board of Directors governs Aptorum Group in accordance with its vision, mission and values. Aptorumâ€™s directors have extensive medical, governance and financial experience and relationships throughout the healthcare industry. The role of the Board of Directors is to ensure that the company is well managed by having its units fulfilling their roles and responsibilities.",
                 "icons": "images/icons/Button4.png",
                 "icons_overlay": "images/icons/Button4_overhit.png",
                 "members":[
@@ -224,12 +278,6 @@ var configs = {
                         "title":"Independent Non-Executive Director, Aptorum Group Limited",
                         "text":"<p>Mr. Bathurst is an independent non-executive director of Aptorum Group Limited. Since 2012, he has also been serving as a Director at Summerhill Advisors Limited in London, U.K., a company that provides corporate and marketing advice to established companies on their new business and early stage company activities. Mr. Bathurst primarily focuses on corporate positioning, marketing, sales, management structure, and corporate governance.</p><p>Prior to his role with Summerhill, he served as a Director for J.O. Hambro Investment Management from September 2008 to August 2011 where he was in charge of restructuring and commercializing a range of in-house funds. He was appointed to the management board and also supervised reporting teams including accounting teams, financial controllers, regulatory reporting teams and internal control issues.</p><p>From April 2004 to March 2008, Mr. Bathurst served in multiple roles at Old Mutual Asset Managers (UK)including being a member of the senior management team and director of international sales. Duties included business development, recruitment, establishing and supervision of regulatory and financial reporting teams and to ensure complying with the funds' regulatory requirements and corporate governance standards.</p><p>Previous to such roles, Mr. Bathurst was an advisor to Lion Capital Advisers Limited from April 2003 to March 2004, and also an advisor to the board of management of LCF Rothschild Asset Management Limited from June 2002 to March 2003.</p><p>Mr Bathurst joined the management board at Credit Agricole Asset Management in London, U.K., from April 1995 to March 2002. He was responsible for the recruitment and development strategy for marketing, sales, financial reporting, controls and investor relations.</p><p>Mr. Bathurst graduated from the Royal Military Academy Sandhurst in November 1974.</p>",
                     },
-                    // {
-                    //     "name":"Mr. William Valtos",
-                    //     "img":"images/team/williamvaltos.png",
-                    //     "title":"Independent Non-Executive Director",
-                    //     "text":"<ul><li>MBA from Kellogg School of Management, Northwestern University and Bachelor of Arts in Economics and Political Science, University of Illinois. Rhodes Scholar.</li><li>Group President of Investment & Capital Corporation of the Philippines (ICCP), and ICCP Venture Partners Inc.</li><li>Chairman of Board of TELUS International Philippines Inc.</li><li>Member of American Chamber of Commerce Manila, Philippine-Singapore Business Council and Overseas Security Advisory Council.</li></ul>",
-                    // },
                 ]               
             },
             {
@@ -258,24 +306,6 @@ var configs = {
                         "text":"<p>Dr. Thomas Lee is the Chief Executive Officer and Chief Scientific Officer of Aptorum Therapeutics Limited, the wholly owned therapeutics holding company of Aptorum Group Limited. Dr. Lee currently serves as Assistant Professor in the School of Pharmacy, Faculty of Medicine, at The Chinese University of Hong Kong (&ldquo;CUHK&rdquo;) having joined the faculty in August 2013. Dr. Lee&rsquo;s key area research involves pharmaceutical research in drug delivery that focuses on formulation development of poorly soluble compounds for oral delivery.</p><p>Prior to academia, Dr. Lee accumulated big-pharma experience by spending a decade in two multinational pharmaceutical companies. He was with Novartis Pharmaceuticals Corporation from June 2003 and November 2008, and subsequently was recruited to Celgene Corporation to serve as a manager of the Formulations Research &amp; Development. He was employed with Celgene from November 2008 to July 2013.</p><p>Dr. Lee graduated with B.Pharm. (Hons) Degree from the formerly Department of Pharmacy at the CUHK in August 1995, and received his Ph.D. in Pharmaceutical Sciences (Drug Delivery) from the University of Wisconsin-Madison in the U.S in May 2003.</p>",
                         // "remark":"Appointments to commence in January 2018",
                     },
-                    // {
-                    //     "name":"Dr. Angel Ng",
-                    //     "img":"images/team/angelng.png",
-                    //     "title":"Chief Operating Officer Of Aptorum Therapeutics",
-                    //     "text":"<ul><li>PhD in Mechanical Engineering, The University of Hong Kong.</li><li>MSc in Composite Materials, Imperial College of London and BSc in Chemistry with Management, The University of Hong Kong. </li><li>Project manager for medical devices application for Innovation and Technology Fund at The University of Hong Kong. </li><li>Manager for ITF – General Support Programme at the Hong Kong Science and Technology Parks Corporation. </li><li>Project Manager at Institute of Precision Engineering, The Chinese University of Hong Kong. Assistant manager at Tecford Trading & Technology Co. Ltd.</li></ul>",
-                    // },
-                    // {
-                    //     "name":"Mr. Junzhe Huang",
-                    //     "img":"images/team/junzhehuang.png",
-                    //     "title":"Research Manager Of Aptorum Therapeutics",
-                    //     "text":"<ul><li>Scientist of translational medicine at Videns R&D Laboratory. </li><li>Nearly 10 years of experiences in biomedical research, including 6 years of drugs discovery and development experiences in biotechnology company. </li><li>Led or co-led the pre-clinical pharmacology studies of about 9 new drug projects, of which four have started clinical trials in China, one in Australia. </li><li>Expert in drug target identification, structure-activity relationship studies, and lead compound to drug candidate evaluation. </li><li>BSc Degree in biological science, Nankai University and MPhil in Medical Sciences, The Chinese University of Hong Kong.</li></ul>",
-                    // },
-                    // {
-                    //     "name":"Professor Albert Chow",
-                    //     "img":"images/team/albertchow.png",
-                    //     "title":"Chief Executive Officer Of Aptorum Pharmaceutical Development",
-                    //     "text":"<ul><li>Over 25 years of experience at the School of Pharmacy, The Chinese University of Hong Kong and is specialised in the formulation, CMC and toxicology studies of pre-clinical phase assets. </li><li>Previously independent non-executive director at the Jacobson Pharmaceutical Group, Hong Kong, providing advice on their formulation and development. </li><li>PhD in Physical Pharmaceutics and MSc in Pharmaceutical Chemistry, the University of Toronto. He was a graduate of University of Bradford. </li></ul>",
-                    // },                    
                 ]                              
             },
             {
@@ -309,30 +339,6 @@ var configs = {
                         "title":"Senior Clinical Advisor, Aptorum Therapeutics Limited",
                         "text":"<p>Professor Vincent Mok has been serving as the Assistant Dean (Admissions) at the Faculty of Medicine, The Chinese University of Hong Kong (&ldquo;CUHK&rdquo;) since January 2014, Head of Division of Neurology of the Department of Medicine and Therapeutics, since&nbsp;December 2016 and was appointed as the Mok Hing Yiu Professor of Medicine since November 2017. He has also been serving in Master Programme in Stroke and Clinical Neurosciences since July 2007.</p><p>Professor Mok specializes in Neurology, Dementia, and Movement disorders. Key areas of research interest include Vascular Cognitive Impairment, Cerebral Small Vessel Disease, Neuroimaging in Cognitive Impairment, and Parkinson&rsquo;s Disease. Other roles Professor Mok is involved with include being a Convener of Lui Che Woo Institute of Innovative Medicine - Brain Theme since January 2017, the Director of Therese Pei Fong Chow Research Centre for Prevention of Dementia since May 2016, and&nbsp;Executive Committee Member of Chow Yuk Ho Technology Center for Innovative Medicine since&nbsp;January 2015.</p><p>Professor Mok&rsquo;s qualifications include: Doctor of Medicine at CUHK (December 2005), Fellow of the Royal College of Physicians (Edinburgh) (July 2007), Fellow of the Hong Kong Academy of Medicine (December 2000), Fellow of the Hong Kong College of Physicians (July 2000), Member of the Royal College of Physicians (November 1996), and Bachelor of Medicine and Bachelor of Surgery (University of Sydney) (April 1993).</p>",
                     },
-                    // {
-                    //     "name":"Professor Lawrence Baum",
-                    //     "img":"images/team/lawrencebaum.png",
-                    //     "title":"Senior Scientific Advisor",
-                    //     "text":"<ul><li>Honorary Associate Professor at The University of Hong Kong</li><li>Associate Professor of The Chinese University of Hong Kong, where he is associated to the Department of Medicine and Therapeutics. </li><li>Graduated from Harvard University before completing his doctorate at the University of California San Diego</li><li>One of the principal investigators of the Curcumin-MNP </li></ul>",
-                    // },
-                    // {
-                    //     "name":"Dr. David Dai, Jp",
-                    //     "img":"images/team/daviddai.png",
-                    //     "title":"Senior Medical Advisor",
-                    //     "text":"<ul><li>30-year career in the medical profession, specialized in geriatric, rehabilitation and pulmonary medicine. </li><li>Consultant Geriatrician in the Department of Medicine at Prince of Wales Hospital, Hong Kong, since 2002 and holds honorary teaching positions at The Chinese University of Hong Kong and The University of Hong Kong. </li><li>Member of several Hong Kong Government Labour and Welfare Bureau steering committees and working groups studying issues relating to community care and residential care services for the elderly. </li><li>Member of several Social Welfare Department committees and panels and of the Guardianship Board’s Panel. </li><li>Hon Secretary of the Hong Kong Alzheimer’s Disease Association. </li><li>Panel member of the Independent Committee for Handling Complaints of the Social Welfare Department since 2009. </li><li>Appointed Justice of Peace.</li></ul>",
-                    // },
-                    // {
-                    //     "name":"Dr. Kwok Chow",
-                    //     "img":"images/team/kwokchow.png",
-                    //     "title":"Senior Clinical Development Manager Of Aptorum Therapeutics, Aptorum Pharmaceutical Development",
-                    //     "text":"<ul><li>Director of Covar Pharmaceuticals Inc. </li><li>Previously Senior Director of Global PDS Technology and Alliances at Patheon Inc and Director of Formulation Development, designed and developed SoluPath™.</li><li>Led design and development of conventional and novel dosage forms at GlaxoSmithKline. </li><li>BSc in Pharmacy, University of Minnesota and PhD in Industrial Pharmacy, University of Toronto. </li></ul>",
-                    // },
-                    // {
-                    //     "name":"Mr. Austin Freedman",
-                    //     "img":"images/team/austinfreedman.png",
-                    //     "title":"Senior Clinical Development Manager Of Aptorum Therapeutics, Aptorum Pharmaceutical Development",
-                    //     "text":"<ul><li>Pharmaceutical industry consultant in Covar Pharmaceuticals Inc. </li><li>Previously at Pharmaceutical Research Department of Glaxo Group Research UK and GlaxoWellcome, Canada. </li><li>Pharmaceutical Development Services at Patheon. </li><li>Technical operations director at Apotex. </li><li>BSc in Pharmacy, University of London, UK and Diploma in Psychotherapy, National Council of Psychotherapists, UK. </li></ul>",
-                    // },                    
                     {
                         "name":"Dr. William Wu",
                         "img":"images/team/williamwu.png",
@@ -345,12 +351,6 @@ var configs = {
                         "title":"Scientific Assessment Committee Member, Aptorum Therapeutics Limited",
                         "text":"<p>Dr. Jason Chan serves as an Assistant Professor in the Department of Otorhinolaryngology, Head &amp; Neck Surgery at The Chinese University of Hong Kong (&ldquo;CUHK&rdquo;) since September 2014. Between June 2012 and September 2014, Dr. Chan satisfied the Hong Kong Medical Council's requirements to practice medicine in Hong Kong while obtaining his certification from American Board of Otolaryngology and continuing his research interests. Professor Chan graduated from Guy&rsquo;s, King&rsquo;s and St Thomas&rsquo; School of Medicine in London in July 2005, followed by completion of specialist training in Otolaryngology, Head and Neck surgery at the Johns Hopkins School of Medicine with advanced training in Head and Neck Surgery on microvascular reconstruction and robotics in June 2013.</p><p>His research interests include the genomics, microbiome, diagnosis, treatment and surveillance of head and neck cancers and the development of novel robotic applications for head and neck surgery.</p><p>Dr. Chan&rsquo;s qualifications: License of Medical Council of Hong Kong, Bachelor of Medicine and Bachelor of Surgery (London), Diplomate American Board of Otolaryngology, Head and Neck Surgery, Fellow of the Hong Kong College of Otorhinolaryngology, Fellow of the Hong Kong Academy of Medicine (Otorhinolaryngology), Feloow of the Royal College of Surgeons Edinburgh (Otorhinolaryngology).</p>",
                     },
-                    // {
-                    //     "name":"Dr. Kenny Kwan Yat Hong",
-                    //     "img":"images/team/kennykwan.png",
-                    //     "title":"Scientific Assessment Committee Member, Aptorum Therapeutics Limited",
-                    //     "text":"<p>Dr. Kenny Kwan serves as a Clinical Assistant Professor in the Department of Orthopaedics and Traumatology, Li Ka Shing Faculty of Medicine at HKU, and subspecializes in Spine Surgery. His key areas of research include basic and clinical research into adult and paediatric spine deformity, metastatic spinal cord compression and other spinal tumours, degenerative spinal disorders, and minimally invasive spine surgery.</p><p>Dr. Kwan earned his Fellowship of Royal College of Surgeons Edinburgh (Orthopedics) in 2011, and has been a Fellow of Hong Kong College of Orthopaedic Surgeons and a Fellow of Hong Kong Academy of Medicine since 2011. Additionally, Dr. Kwan has been a Member of the Royal College of Surgeons of England since 2006, and earned his Bachelor of Surgery and Bachelor of Medicine from the University of Oxford Medical School in 2002 </p>",
-                    // },
                     {
                         "name":"Dr. Kwok, Ka Wai",
                         "img":"images/team/kawaikwok.png",
@@ -392,138 +392,71 @@ var configs = {
                 "name": "html_news_rthk_01",
                 "ishtml": true,
                 "href":"http://www.rthk.hk/radio/radio1/programme/NovaManagement/episode/470079",
-                "title": "管理新思维 - 红顶商人胡雪岩",
-                "place":"香港电台第一台",
+                "title": "ç®¡ç†æ–°æ€ç»´ - çº¢é¡¶å•†äººèƒ¡é›ªå²©",
+                "place":"é¦™æ¸¯ç”µå°ç¬¬ä¸€å°",
                 "date":"11 Nov 2017",
-                "caption": "主持人：陈志辉、冼日明、 潘嘉阳、李静宜、程洁明<br>嘉宾：禤骏远（知临集团首席执行官及创始人)",
+                "caption": "ä¸»æŒäººï¼šé™ˆå¿—è¾‰ã€å†¼æ—¥æ˜Žã€ æ½˜å˜‰é˜³ã€æŽé™å®œã€ç¨‹æ´æ˜Ž<br>å˜‰å®¾ï¼šç¦¤éªè¿œï¼ˆçŸ¥ä¸´é›†å›¢é¦–å¸­æ‰§è¡Œå®˜åŠåˆ›å§‹äºº)",
             },
             {                
                 "name": "html_video_tvb_01",
                 "ishtml": true,
                 "href":"http://news.tvb.com/programmes/mediinfocancerii/59ec3e70e60383c923287999",
-                "title": "癌症系列II - 大肠癌（二）@无线新闻",
-                "place":"无线新闻",
+                "title": "ç™Œç—‡ç³»åˆ—II - å¤§è‚ ç™Œï¼ˆäºŒï¼‰@æ— çº¿æ–°é—»",
+                "place":"æ— çº¿æ–°é—»",
                 "date":"22 Oct 2017",
-                "caption": "Justin Wu @ 无线新闻",
+                "caption": "Justin Wu @ æ— çº¿æ–°é—»",
             },
             {                
                 "name": "video_what_is_ad",
-                "title": "柏金逊症200周年健康教育短片系列香港运动障碍学会呈献",
+                "title": "æŸé‡‘é€Šç—‡200å‘¨å¹´å¥åº·æ•™è‚²çŸ­ç‰‡ç³»åˆ—é¦™æ¸¯è¿åŠ¨éšœç¢å­¦ä¼šå‘ˆçŒ®",
                 "place":"The Hong Kong Movement Disorder Society",
                 "date":"07 Aug 2017",
-                "caption": "柏金逊症200周年健康教育短片系列 - 第一集：什么是柏金逊症？<br>讲师：莫仲棠教授（香港运动障碍学会前会长及脑神经科专科医生）",
+                "caption": "æŸé‡‘é€Šç—‡200å‘¨å¹´å¥åº·æ•™è‚²çŸ­ç‰‡ç³»åˆ— - ç¬¬ä¸€é›†ï¼šä»€ä¹ˆæ˜¯æŸé‡‘é€Šç—‡ï¼Ÿ<br>è®²å¸ˆï¼šèŽ«ä»²æ£ æ•™æŽˆï¼ˆé¦™æ¸¯è¿åŠ¨éšœç¢å­¦ä¼šå‰ä¼šé•¿åŠè„‘ç¥žç»ç§‘ä¸“ç§‘åŒ»ç”Ÿï¼‰",
             },
             {                
                 "name": "html_news_am730_01",
                 "ishtml": true,
                 "href":"https://www.am730.com.hk/news/%E5%81%A5%E5%BA%B7/%E4%B8%AD%E5%A4%A7%E7%A0%94%E7%A9%B6%E8%AA%8D%E8%AD%98%E7%A5%9E%E7%B6%93%E7%96%BE%E7%97%85-%E6%8B%86%E8%A7%A3%E5%A4%A7%E8%85%A6%E5%AD%B8%E5%8B%95%E4%BD%9C%E5%8E%9F%E7%90%86-85499",
-                "title": "中大研究认识神经疾病 - 拆解大脑学动作原理 @ AM730",
+                "title": "ä¸­å¤§ç ”ç©¶è®¤è¯†ç¥žç»ç–¾ç—… - æ‹†è§£å¤§è„‘å­¦åŠ¨ä½œåŽŸç† @ AM730",
                 "place":"AM730",
                 "date":"05 Jul 2017",
-                "caption": "高浩博士与脑神经科学中心团队",
+                "caption": "é«˜æµ©åšå£«ä¸Žè„‘ç¥žç»ç§‘å­¦ä¸­å¿ƒå›¢é˜Ÿ",
             },
             {                
                 "name": "video_event_all",
                 "title": "Videns Life Sciences Launch Cocktail Event Highlights",
                 "place":"Island Shangri-La",
                 "date":"22 Jun 2017",
-                "caption": "Videns Life Sciences, a member of the APTUS Therapeutics Group, is the first Hong Kong based company focused in the Large-Scale Strategic Clinical Development in Neurodegenerative Disease and Imaging Diagnosis Innovation. Here are the highlights from the company’s official Launch Cocktail Event held in Island Shangri-La, Hong Kong.",
+                "caption": "Videns Life Sciences, a member of the APTUS Therapeutics Group, is the first Hong Kong based company focused in the Large-Scale Strategic Clinical Development in Neurodegenerative Disease and Imaging Diagnosis Innovation. Here are the highlights from the companyâ€™s official Launch Cocktail Event held in Island Shangri-La, Hong Kong.",
             },
             {                
                 "name": "video_xinglin_vincent_mok",
-                "title": "【杏林在线】视网膜血管检测中风风险",
+                "title": "ã€ææž—åœ¨çº¿ã€‘è§†ç½‘è†œè¡€ç®¡æ£€æµ‹ä¸­é£Žé£Žé™©",
                 "place":"Now TV",
                 "date":"08 Mar 2017",
-                "caption": "【杏林在线】视网膜血管检测中风风险 - 中文大学莫仲棠教授详细讲解。",
+                "caption": "ã€ææž—åœ¨çº¿ã€‘è§†ç½‘è†œè¡€ç®¡æ£€æµ‹ä¸­é£Žé£Žé™© - ä¸­æ–‡å¤§å­¦èŽ«ä»²æ£ æ•™æŽˆè¯¦ç»†è®²è§£ã€‚",
             },
             {                
                 "name": "video_kwgroup",
-                "title": "高浩博士@嘉事专题",
-                "place":"嘉事专题",
+                "title": "é«˜æµ©åšå£«@å˜‰äº‹ä¸“é¢˜",
+                "place":"å˜‰äº‹ä¸“é¢˜",
                 "date":"20 Sep 2017",
-                "caption": "高浩博士在嘉事专题接受访问@ 11：49",
+                "caption": "é«˜æµ©åšå£«åœ¨å˜‰äº‹ä¸“é¢˜æŽ¥å—è®¿é—®@ 11ï¼š49",
             },
             {                
                 "name": "html_news_wenwei_01",
                 "ishtml": true,
                 "href":"http://paper.wenweipo.com/2014/09/10/YO1409100013.htm",
-                "title": "年轻神经科学家解脑谜@香港文汇报",
-                "place":"香港文汇报",
+                "title": "å¹´è½»ç¥žç»ç§‘å­¦å®¶è§£è„‘è°œ@é¦™æ¸¯æ–‡æ±‡æŠ¥",
+                "place":"é¦™æ¸¯æ–‡æ±‡æŠ¥",
                 "date":"10 Sep 2014",
-                "caption": "香港文汇报 - 高浩博士专访",
+                "caption": "é¦™æ¸¯æ–‡æ±‡æŠ¥ - é«˜æµ©åšå£«ä¸“è®¿",
             },
         ]
     },
-    //     "press":[
-    //         {                
-    //             "name": "html_news_rthk_01",
-    //             "ishtml": true,
-    //             "href":"http://www.rthk.hk/radio/radio1/programme/NovaManagement/episode/470079",
-    //             "title": "管理新思維 - 紅頂商人胡雪巖",
-    //             "place":"香港電台第一台",
-    //             "date":"11 Nov 2017",
-    //             "caption": "主持人：陳志輝、冼日明、 潘嘉陽、李靜宜、程潔明<br>嘉賓：禤駿遠（知臨集團首席執行官及創始人)",
-    //         },
-    //         {                
-    //             "name": "html_video_tvb_01",
-    //             "ishtml": true,
-    //             "href":"http://news.tvb.com/programmes/mediinfocancerii/59ec3e70e60383c923287999",
-    //             "title": "癌症系列II - 大肠癌（二）@无线新闻",
-    //             "place":"无线新闻",
-    //             "date":"22 Oct 2017",
-    //             "caption": "Justin Wu @ 无线新闻",
-    //         },
-    //         {                
-    //             "name": "video_what_is_ad",
-    //             "title": "柏金逊症200周年健康教育短片系列香港运动障碍学会呈献",
-    //             "place":"The Hong Kong Movement Disorder Society",
-    //             "date":"07 Aug 2017",
-    //             "caption": "柏金逊症200周年健康教育短片系列 - 第一集：什么是柏金逊症？<br>讲师：莫仲棠教授（香港运动障碍学会前会长及脑神经科专科医生）",
-    //         },
-    //         {                
-    //             "name": "html_news_am730_01",
-    //             "ishtml": true,
-    //             "href":"https://www.am730.com.hk/news/%E5%81%A5%E5%BA%B7/%E4%B8%AD%E5%A4%A7%E7%A0%94%E7%A9%B6%E8%AA%8D%E8%AD%98%E7%A5%9E%E7%B6%93%E7%96%BE%E7%97%85-%E6%8B%86%E8%A7%A3%E5%A4%A7%E8%85%A6%E5%AD%B8%E5%8B%95%E4%BD%9C%E5%8E%9F%E7%90%86-85499",
-    //             "title": "中大研究认识神经疾病 - 拆解大脑学动作原理 @ AM730",
-    //             "place":"AM730",
-    //             "date":"05 Jul 2017",
-    //             "caption": "高浩博士与脑神经科学中心团队",
-    //         },
-    //         {                
-    //             "name": "video_event_all",
-    //             "title": "Videns Life Sciences Launch Cocktail Event Highlights",
-    //             "place":"Island Shangri-La",
-    //             "date":"22 Jun 2017",
-    //             "caption": "Videns Life Sciences, a member of the APTUS Therapeutics Group, is the first Hong Kong based company focused in the Large-Scale Strategic Clinical Development in Neurodegenerative Disease and Imaging Diagnosis Innovation. Here are the highlights from the company’s official Launch Cocktail Event held in Island Shangri-La, Hong Kong.",
-    //         },
-    //         {                
-    //             "name": "video_xinglin_vincent_mok",
-    //             "title": "【杏林在线】视网膜血管检测中风风险",
-    //             "place":"Now TV",
-    //             "date":"08 Mar 2017",
-    //             "caption": "【杏林在线】视网膜血管检测中风风险 - 中文大学莫仲棠教授详细讲解。",
-    //         },
-    //         {                
-    //             "name": "video_kwgroup",
-    //             "title": "高浩博士@嘉事专题",
-    //             "place":"嘉事专题",
-    //             "date":"20 Sep 2017",
-    //             "caption": "高浩博士在嘉事专题接受访问@ 11：49",
-    //         },
-    //         {                
-    //             "name": "html_news_wenwei_01",
-    //             "ishtml": true,
-    //             "href":"http://paper.wenweipo.com/2014/09/10/YO1409100013.htm",
-    //             "title": "年轻神经科学家解脑谜@香港文汇报",
-    //             "place":"香港文汇报",
-    //             "date":"10 Sep 2014",
-    //             "caption": "香港文汇报 - 高浩博士专访",
-    //         },
-    //     ]
-    // },
     "investor":{
         "title":"Event",        
-        "text":"Access Aptorum’s due diligence Data Room here.",
+        "text":"Access Aptorumâ€™s due diligence Data Room here.",
         "dataroomurl":"http://investor.aptorumgroup.com",
     },
     "contact": {

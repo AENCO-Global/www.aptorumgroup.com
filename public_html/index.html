@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -128,7 +129,44 @@
           </div>
           <!-- END CONTAINER -->
 
+
+          <!-- About Us Vision -->
           <div class="fullwidth grey">
+            <div class="container">
+              <div class="fancy-header2">
+                <h2 class="highlight">{{aboutus.vision.title}}</h2>
+                <ul>
+                  {{#each aboutus.vision.bullets}}
+                    <li>{{text}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+
+            </div>
+            <!-- END CONTAINER -->
+          </div>
+        </div>
+        <!-- End ABOUT US SECTION -->
+
+          <!-- The Story -->
+          <div class="fullwidth blue">
+            <div class="container">
+              <div class="fancy-header2">
+                <h2 class="highlight">{{aboutus.story.title}}</h2>
+                <ul>
+                  {{#each aboutus.story.paragraphs}}
+                    <li>{{text}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+
+            </div>
+            <!-- END CONTAINER -->
+          </div>
+        </div>
+        <!-- End ABOUT US SECTION -->
+
+          <div class="fullwidth white">
             <div class="container">
               <div class="fancy-header2">
 
@@ -357,11 +395,11 @@
                 <![endif]-->
                       <input type="text" name="contact[name]" id="name" placeholder="{{contact.placeholders.name}}">
                       <!--[if IE]>
-                   		<label for="email">Email</label>
+                      <label for="email">Email</label>
                     <![endif]-->
                       <input type="text" name="contact[email]" id="email" placeholder="{{contact.placeholders.email}}">
                       <!--[if IE]>
-                   		<label for="subject">Subject</label>
+                      <label for="subject">Subject</label>
                     <![endif]-->
                       <input type="text" name="contact[subject]" id="subject" placeholder="{{contact.placeholders.subject}}">
                       <div>
@@ -370,7 +408,7 @@
                     </div>
                     <div id="contact-textarea">
                       <!--[if IE]>
-                   		<label for="message">Your Message Here</label>
+                      <label for="message">Your Message Here</label>
                     <![endif]-->
                       <textarea name="contact[message]" id="message" cols="39" rows="4" placeholder="{{contact.placeholders.message}}"></textarea>
                     </div>
@@ -483,6 +521,15 @@
               <!-- START MEMBER NAME AND ROLE -->
               <div class="member-role">
                 <h1>{{business.modal.title}}</h1>
+                <p>{{business.modal.text1}}</p>
+                <p>{{business.modal.text2}}</p>
+                <ul>
+                  {{#each business.modal.bullets}}
+                    <li>{{text}}</li>
+                  {{/each}}
+                </ul>
+                <p>{{business.modal.text3}}</p>
+                <img src="{{business.modal.image}}"></img>
               </div>
               <!-- END MEMBER NAME AND ROLE -->
               <div class="businesses_desc">
@@ -490,7 +537,15 @@
                 <div class="row ">
                   <div class="sixteen columns">
                     <h2>{{title}}</h2>
-                    <div>{{text}}</div>
+                    <div>{{text1}}</div>
+                    <div>{{text2}}</div>
+                    <ul>
+                      {{#each bullets}}
+                        <li>{{title}}</br>
+                            {{text}}</li>
+                      {{/each}}
+                    </ul>
+
                   </div>
                 </div>
                 {{/each}}
@@ -650,30 +705,6 @@
           $('#page_content').hide();
         });
       });
-      // $('.team-img-overlay').each(function (index) {
-      //   $(this).on('click', function (e) {
-      //     e.preventDefault();
-      //     $('body').attr('scroll', 'no');
-      //     curr_y = $(window).scrollTop();
-      //     $('#page_content').hide();
-      //   });
-      // });
-      // $('.team-img-org').each(function (index) {
-      //   $(this).on('click', function (e) {
-      //     e.preventDefault();
-      //     $('body').attr('scroll', 'no');
-      //     curr_y = $(window).scrollTop();
-      //     $('#page_content').hide();
-      //   });
-      // });
-      // $('.modal-popup-link').each(function (index) {
-      //   $(this).on('click', function (e) {
-      //     e.preventDefault();
-      //     $('body').attr('scroll', 'no');
-      //     curr_y = $(window).scrollTop();
-      //     $('#page_content').hide();
-      //   });
-      // });
       $('.close').each(function (index) {
         $(this).on('click', function (e) {
           e.preventDefault();
