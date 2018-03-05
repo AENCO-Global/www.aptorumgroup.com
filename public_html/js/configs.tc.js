@@ -394,6 +394,15 @@ var configs_tc = {
     "news":{
         "title":"新聞",
         "press":[
+             {                
+                "name": "html_news_mingpao_01",
+                "ishtml": true,
+                "href":"https://news.mingpao.com/pns/dailynews/web_tc/article/20180304/s00002/1520099628034",
+                "title": "義教非洲醫生 大國手變學醫 體驗手術室水浸鐵槌鑿骨",
+                "place":"義教非洲醫生 大國手變學醫 體驗手術室水浸鐵槌鑿骨",
+                "date":"4 Mar 2018",
+                "caption": "【明報專訊】醫院資源不足，醫護要面對的不是130％的內科病牀使用率",
+            },
             {                
                 "name": "html_news_rthk_01",
                 "ishtml": true,
